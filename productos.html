@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Productos - Fleur</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/productos.css">
+</head>
+<body>
+    <style>/* Reset de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logo {
+    width: 100px;  
+    height: 100px;  /* La imagen será cuadrada */
+    border-radius: 50%;  /* Hace la imagen redonda */
+    object-fit: cover;  /* Ajusta la imagen si es más grande o más pequeña */
+}
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        /* Header */
+        header {
+            background-color: rgba(189, 58, 112, 0.863);
+            padding: 10px 0;
+        }
+        
+        header h1 {
+            text-align: center;
+            color: white;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #cf6c92;
+        }
+        
+        /* Sección de productos */
+        #bienvenidos {
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        #bienvenidos h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        #bienvenidos p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        /* Artículos de productos */
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        article {
+            background-color: #fff;
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        article:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        article img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        article h4 {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            color: #333;
+        }
+        
+        /* Marquee */
+        .marquee {
+            background-color: #3b1313;
+            color: #eeeeee;
+            padding: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+        }
+        
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            #bienvenidos h2 {
+                font-size: 1.8rem;
+            }
+        
+            article {
+                width: 100%;
+            }
+        
+            .contenedor {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        </style>
+    <header>
+        <img src="fleur.ico" alt="Logo de Fleur" class="logo">
+        <div class="contenedor">
+            <h1 class="icon-birthday">Fleur</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-birthday" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="fleur.html">Inicio</a>
+                <a href="somos.html">¿Quiénes somos?</a>
+                <a href="productos.html">Nuestros productos</a>
+                <a href="contactos.html">Contactos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="bienvenidos">
+            <div class="contenedor">
+                <h2>Bienvenidos a Fleur</h2>
+                <p>Ofrecemos una variedad de postres decorados con un toque floral único, hechos para sorprenderte y deleitarte en cada bocado.</p>
+            </div>
+
+            <h2>Productos:</h2>
+            <p>Nuestros productos incluyen tartas y cupcakes, todos decorados con flores comestibles y hechos con ingredientes frescos y naturales.</p>
+
+            <div class="contenedor">
+                <article>
+                    <img src="fleur2.jpg" alt="Tarta floral">
+                    <h4>Fleur es mucho más que un simple postre: es una obra de arte comestible, diseñada meticulosamente para capturar la esencia de la naturaleza en cada detalle. Sus capas suaves y esponjosas, combinadas con una cobertura exquisita, se fusionan perfectamente con las decoraciones florales comestibles, transformando cualquier momento en una ocasión memorable.</h4>
+                </article>
+                <article>
+                    <img src="pastel.jpg" alt="Pastel floral">
+                    <h4>Ideal para cualquier ocasión, ya sea un cumpleaños, un aniversario o simplemente para consentirte, el pastel "Fleur" se convierte en el regalo perfecto para sorprender a alguien especial. ¡Haz que tu mesa brille con la elegancia de las flores y disfruta del sabor que solo un pastel artesanal puede ofrecer!</h4>
+                </article>
+                <article>
+                    <img src="cupcake.jpg" alt="Cupcake floral">
+                    <h4>¡Haz que tu día sea más dulce con nuestros irresistibles cupcakes! Cada uno está cuidadosamente elaborado para ofrecerte una explosión de sabor en cada bocado. Con una base esponjosa y un glaseado suave y cremoso, nuestros cupcakes son perfectos para cualquier ocasión, ya sea como un pequeño capricho para ti o como un detalle especial para compartir.</h4>
+                </article>
+            </div>
+            <div class="marquee">
+                “Tan real que las quieres poner en agua”
+            </div> 
+        </section>    
+    </main>
+</body>
+</html>

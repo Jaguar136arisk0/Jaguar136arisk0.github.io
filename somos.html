@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Fleur - ¿Quiénes Somos?</title>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <style>/* Reset de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logo {
+    width: 100px;  
+    height: 100px;  /* La imagen será cuadrada */
+    border-radius: 50%;  /* Hace la imagen redonda */
+    object-fit: cover;  /* Ajusta la imagen si es más grande o más pequeña */
+}
+        
+        /* Fondo general */
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Estilo de header */
+        header {
+            background-color: rgba(189, 58, 112, 0.863);
+            padding: 10px 0;
+        }
+        
+        header h1 {
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #cf6c92;
+        }
+        
+        /* Sección de bienvenida y misión */
+        #bienvenidos {
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        #bienvenidos h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #3b1313;
+        }
+        
+        #bienvenidos p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        /* Sección del equipo */
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 20px;
+            color: #333;
+        }
+        
+        p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        /* Marquee de bienvenida */
+        .marquee {
+            background-color: #3b1313;
+            color: #eeeeee;
+            padding: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+            font-size: 1.2rem;
+        }
+        
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        
+        /* Estilos responsivos */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+        
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            nav a {
+                margin-bottom: 10px;
+            }
+        
+            #bienvenidos h2 {
+                font-size: 1.6rem;
+            }
+        
+            .marquee {
+                font-size: 1rem;
+            }
+        }
+        </style>
+    <header>
+        <img src="fleur.ico" alt="Logo de Fleur" class="logo">
+        <div class="contenedor">
+            <h1 class="icon-birthday">Fleur</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-birthday" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="fleur.html">Inicio</a>
+                <a href="somos.html">¿Quiénes somos?</a>
+                <a href="productos.html">Nuestros productos</a>
+                <a href="contactos.html">Contactos</a>
+            </nav>
+        </div>
+    </header> 
+
+    <main>
+        <section id="bienvenidos">
+            <div class="contenedor">
+                <h2>Bienvenidos a Fleur</h2>
+                <p>En Fleur nos dedicamos a ofrecer repostería de alta calidad, con un enfoque en la creación de "tartillas flor de loto", 
+                    además de una variedad de postres diseñados para superar las expectativas de nuestros clientes.</p>
+            </div>
+
+            <h2>Misión:</h2>
+            <p>Ofrecer a nuestros clientes repostería de alta calidad, con el producto principal,
+                las 'tartillas flor de loto', además de una variedad de postres diseñados para satisfacer y superar sus expectativas. Nos comprometemos a elaborar productos que, 
+                además de deleitar por su sabor, originalidad y presentación, contribuyan al bienestar de nuestros consumidores mediante el uso de ingredientes cuidadosamente 
+                seleccionados y beneficiosos para la salud, brindando confianza y satisfacción en cada elección.</p>
+
+            <h2>Descripción del equipo o fundadores:</h2>
+            <p>Integrantes: Espinosa Soto José Manuel, Félix Domínguez Isaías, López García Iker Erubey, 
+                Navarro Ayala Ángel Enrique, Valenzuela Acosta Dulce Vianey, Vargas Torres Sofía Valeria, 
+                Verdugo Salazar Phiara Domenika.</p>
+
+            <h2>Visión de la empresa:</h2>
+            <p>Ser la repostería de referencia en el sur de Sonora, para quienes buscan postres excepcionales, 
+                elaborados con pasión, dedicación y un compromiso genuino con la calidad. 
+                Aspiramos a que cada integrante de nuestro equipo contribuya a crear una experiencia de sabor memorable 
+                para nuestros clientes, mientras disfruta de un ambiente de trabajo inspirador, colaborativo y enriquecedor,
+                 manteniendo nuestros valores con integridad, creando alimentos de calidad 
+                 y siendo responsables de cualquier problema que surja.</p>
+
+            <div class="marquee">
+                BIENVENIDOS A FLEUR, UNA EMPRESA DEDICADA A VENDER POSTRES.
+            </div> 
+        </section>
+    </main>
+
+</body>
+</html>
